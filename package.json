@@ -1,0 +1,30 @@
+{
+  "name": "suikoden-battle-search",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Brute-force battle searches for Suikoden, built on suikoden-rng-lib's battle simulator",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "test": "node --test",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "typecheck": "tsc",
+    "search-check": "node scripts/searchCheck.js"
+  },
+  "dependencies": {
+    "suikoden-rng-lib": "file:../Suikoden-RNG-lib"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/node": "^26.2.0",
+    "eslint": "^10.8.1",
+    "prettier": "^3.9.6",
+    "typescript": "^7.0.2"
+  }
+}
